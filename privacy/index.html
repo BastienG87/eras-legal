@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ERAS</title>
+<style>
+  :root{
+    --bg:#faf9f6; --surface:#ffffff; --ink:#1c1f26; --ink-soft:#565b66;
+    --line:#e6e2d8; --accent:#0a2147; --gold:#a8843f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#12141a; --surface:#181b22; --ink:#eceef2; --ink-soft:#9aa0ac; --line:#2a2e38; --accent:#7fa8e8; --gold:#e0be6f; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.65; font-size:16px;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:3.5rem 1.5rem 6rem;}
+  h1{font-size:2rem; margin:0 0 .3rem; letter-spacing:-.01em;}
+  .updated{color:var(--ink-soft); font-size:.9rem; margin:0 0 2.5rem;}
+  h2{font-size:1.25rem; margin:2.5rem 0 .8rem; padding-top:.5rem; border-top:1px solid var(--line);}
+  h2:first-of-type{border-top:none; padding-top:0;}
+  h3{font-size:1.02rem; margin:1.4rem 0 .5rem;}
+  p, li{color:var(--ink-soft); max-width:66ch;}
+  strong{color:var(--ink); font-weight:600;}
+  a{color:var(--accent);}
+  ul{padding-left:1.2rem;}
+  li{margin-bottom:.4rem;}
+  table{border-collapse:collapse; width:100%; margin:1rem 0; font-size:.92rem;}
+  th, td{text-align:left; padding:.55rem .7rem; border:1px solid var(--line); vertical-align:top;}
+  th{background:var(--surface); color:var(--ink); font-weight:600;}
+  td{color:var(--ink-soft);}
+  .note{
+    background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--gold);
+    border-radius:6px; padding:.9rem 1.1rem; margin:1.2rem 0; font-size:.92rem; color:var(--ink-soft);
+  }
+  .contact{
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:1.3rem 1.5rem; margin-top:1rem;
+  }
+  footer{margin-top:3rem; color:var(--ink-soft); font-size:.85rem;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Privacy Policy</h1>
+<p class="updated">ERAS Technologies Ltd · Last updated 21 August 2026</p>
+
+<p>ERAS ("we", "us", "our") provides a mobile application for meditation, stress-response monitoring, and longevity-focused wellness (the "App"), including EEG measurement via the UMind Mirror device and heart-rate/recovery data via optional third-party integrations. This policy explains what we collect, why, and the choices you have.</p>
+
+<p>We take the sensitivity of this data seriously: EEG and heart-rate data are <strong>special category health data</strong> under GDPR and equivalent frameworks. We only process it with your explicit consent, given during onboarding, and you can withdraw that consent and request deletion of your data at any time.</p>
+
+<h2>1. Who this applies to</h2>
+<p>This policy applies to anyone who creates an ERAS account, in any country. We currently operate our infrastructure primarily out of Hong Kong (AWS <code>ap-east-1</code>), and are launching first in Hong Kong and the United Arab Emirates — so this policy is written with Hong Kong's Personal Data (Privacy) Ordinance (PDPO), UAE data-protection law, and the EU/UK GDPR all in mind, since some users may be covered by more than one.</p>
+<p>The App is intended for users aged <strong>16 and over</strong>. We do not knowingly collect data from anyone younger, and our sign-up flow requires a birth date consistent with this minimum.</p>
+
+<h2>2. What we collect</h2>
+
+<h3>Account &amp; identity data</h3>
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>Email address or phone number</td><td>Account creation and sign-in (via AWS Cognito), passwordless one-time-code verification</td></tr>
+  <tr><td>Name, date of birth, gender, country of origin/residence</td><td>Personalizing your experience and computing age-adjusted longevity scores</td></tr>
+  <tr><td>Spirituality/faith preference (optional)</td><td>Tailoring the content style of guided sessions — never shared, used only to select which content set you see</td></tr>
+  <tr><td>Emergency contact name and phone number (optional)</td><td>Only used if you choose to reach that contact directly from within the App; never used for any other purpose</td></tr>
+</table>
+
+<h3>Biometric &amp; health data</h3>
+<table>
+  <tr><th>Data</th><th>Source</th><th>Why</th></tr>
+  <tr><td>EEG session data</td><td>UMind Mirror device (Bluetooth)</td><td>Real-time stress/hijack detection and guided-session feedback</td></tr>
+  <tr><td>Heart rate, HRV, recovery, sleep, strain, SpO2, skin temperature, workout data</td><td>WHOOP and/or Amazfit/Zepp, if you connect them</td><td>Enriching your longevity score and session context</td></tr>
+  <tr><td>Session interaction data (which guided sessions you use, how you respond)</td><td>In-app</td><td>Personalizing which content is suggested to you</td></tr>
+  <tr><td>Voice journaling entries</td><td>Optional, in-app</td><td>Personal reflection — recorded and transcribed entirely on your device; audio and transcript never leave your phone unless you explicitly export or share them yourself</td></tr>
+</table>
+
+<div class="note">
+<strong>Third-party integrations (WHOOP, Amazfit/Zepp):</strong> if you connect one of these accounts, we pull the specific data types listed above via that provider's official API, using a token you can revoke at any time by disconnecting the integration in the App. We do not access anything beyond what's listed here.
+</div>
+
+<h3>Device &amp; usage data</h3>
+<ul>
+  <li>Device type, OS version, app version — for support and crash diagnostics</li>
+  <li>Notification preferences and delivery status</li>
+  <li>Bluetooth connection logs for your paired devices</li>
+</ul>
+
+<h2>3. Anonymized research data pool</h2>
+<p>Separately from the account-linked data above, ERAS maintains an anonymized biometric research pool used to improve our on-device and cloud models. Before storage, your user ID and device ID are passed through a one-way cryptographic transform (PBKDF2, with a secret salt) so this pool cannot be linked back to your account. Only your birth year is retained for this purpose — never your full date of birth.</p>
+<p>This anonymized collection happens as part of normal use of the App and is separate from the setting below, which governs a different, later question.</p>
+
+<h2>4. Sharing with third-party researchers — your choice</h2>
+<p>From the Data tab in the App, you can choose to opt in to a monthly research-sharing campaign. This is <strong>off by default</strong> — nothing is shared with any third party until you explicitly turn it on, and turning it on locks in for the remainder of that month's campaign by design. As of this policy's date, no third-party sharing pipeline is active yet; this setting records your preference for when one exists, and we will not activate any sharing without this consent already being on.</p>
+<p>This setting does not affect the anonymized research pool described in Section 3, which is used internally regardless of this preference.</p>
+
+<h2>5. Data retention</h2>
+<p>We retain your account and health data <strong>for as long as your account remains active</strong>. We keep this data because longitudinal history — seeing how your recovery, stress response, and healthspan trend over months and years — is a core part of what the App provides, not incidental storage.</p>
+<p>If you request deletion of your account or your data (Section 7), we erase it within <strong>30 days</strong> of your request.</p>
+<p>We are developing an automated retention policy for accounts that go inactive for an extended period; until that is in place, an inactive account's data is retained the same as an active one, until you request its deletion. We will update this section with a specific inactivity period once that automation ships.</p>
+
+<h2>6. Where your data is stored</h2>
+<p>Our infrastructure runs on Amazon Web Services, in the Hong Kong region (<code>ap-east-1</code>). This is the only region we operate in today — there is no separate UAE- or EU-local hosting.</p>
+<p>If you are located in the EU/UK, this means your data is transferred outside your home region. This transfer currently relies on your informed consent to this Privacy Policy, given the absence of an adequacy decision for this transfer; we have not yet formalized AWS's standard contractual clauses or another recognized appropriate-safeguards mechanism for this specific transfer, and are actively working to put one in place.</p>
+<p>If you are located in the UAE, your data is likewise processed in Hong Kong rather than in-country. We believe this is consistent with UAE data-protection law for the categories of data the App processes, but because UAE law applies some stricter rules to sensitive health data specifically, we are seeking local legal confirmation of this as an active part of our UAE launch and will update this section if that changes our approach.</p>
+
+<h2>7. Your rights</h2>
+<p>Depending on where you live, you may have the right to:</p>
+<ul>
+  <li><strong>Access</strong> the personal data we hold about you</li>
+  <li><strong>Correct</strong> inaccurate data (directly editable in your Profile for most fields)</li>
+  <li><strong>Delete</strong> your data — email us at the address below and we will process an erasure request, which removes your profile, integration connections, health metrics, healthspan scores, consent preferences, and associated biometric session logs</li>
+  <li><strong>Withdraw consent</strong> for any optional processing (research sharing, specific device integrations) at any time, from within the App</li>
+  <li><strong>Object to or restrict</strong> certain processing, where applicable law provides for it</li>
+</ul>
+<p>We aim to respond to any data request within 30 days.</p>
+
+<h2>8. Security</h2>
+<p>We use industry-standard measures including encrypted connections (TLS) for all data in transit, encryption at rest for stored data, and one-way anonymization for the research data pool described in Section 3. No system is completely secure, and we encourage you to use a strong, unique credential for your account.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>We will update the "last updated" date above whenever this policy changes, and notify you in-app for material changes affecting how your health data is used.</p>
+
+<h2>10. Contact us</h2>
+<div class="contact">
+  <p style="margin:0 0 .4rem"><strong>ERAS Technologies Ltd</strong></p>
+  <p style="margin:0">Privacy &amp; data requests: <a href="mailto:support@eras.life">support@eras.life</a></p>
+</div>
+
+<footer>This policy is written to accurately describe what the ERAS app does as of its last-updated date above, based on a direct review of the app's actual data flows. It is a strong first draft, not a substitute for review by a lawyer qualified in your target markets (Hong Kong PDPO, UAE data-protection law, and GDPR) before this is treated as final.</footer>
+
+</div>
+</body>
+</html>
