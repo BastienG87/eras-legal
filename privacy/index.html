@@ -48,7 +48,7 @@
 <div class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="updated">ERAS Technologies Ltd · Last updated 21 August 2026</p>
+<p class="updated">ERAS Technologies Ltd · Last updated 25 September 2026</p>
 
 <p>ERAS ("we", "us", "our") provides a mobile application for meditation, stress-response monitoring, and longevity-focused wellness (the "App"), including EEG measurement via the UMind Mirror device and heart-rate/recovery data via optional third-party integrations. This policy explains what we collect, why, and the choices you have.</p>
 
@@ -73,13 +73,14 @@
 <table>
   <tr><th>Data</th><th>Source</th><th>Why</th></tr>
   <tr><td>EEG session data</td><td>UMind Mirror device (Bluetooth)</td><td>Real-time stress/hijack detection and guided-session feedback</td></tr>
-  <tr><td>Heart rate, HRV, recovery, sleep, strain, SpO2, skin temperature, workout data</td><td>WHOOP and/or Amazfit/Zepp, if you connect them</td><td>Enriching your longevity score and session context</td></tr>
+  <tr><td>Recovery score, HRV, resting heart rate, sleep performance and consistency, respiratory rate, day strain, average and maximum heart rate</td><td>WHOOP, if you connect it</td><td>Computing your ERAS Score and showing your WHOOP data inside the App</td></tr>
+  <tr><td>Sleep score and stages, resting and maximum heart rate, HRV, PAI, VO2 max, fitness age, steps</td><td>Amazfit/Zepp, if you connect it</td><td>Computing your ERAS Score and showing your Amazfit/Zepp data inside the App</td></tr>
   <tr><td>Session interaction data (which guided sessions you use, how you respond)</td><td>In-app</td><td>Personalizing which content is suggested to you</td></tr>
   <tr><td>Voice journaling entries</td><td>Optional, in-app</td><td>Personal reflection — recorded and transcribed entirely on your device; audio and transcript never leave your phone unless you explicitly export or share them yourself</td></tr>
 </table>
 
 <div class="note">
-<strong>Third-party integrations (WHOOP, Amazfit/Zepp):</strong> if you connect one of these accounts, we pull the specific data types listed above via that provider's official API, using a token you can revoke at any time by disconnecting the integration in the App. We do not access anything beyond what's listed here.
+<strong>Third-party integrations (WHOOP, Amazfit/Zepp):</strong> if you connect one of these accounts, we pull the specific data types listed above via that provider's official API, using a token you can revoke at any time by disconnecting the integration in the App. We do not access anything beyond what's listed here. Data from a connected WHOOP account is used only to compute your ERAS Score and to show it back to you in the App. It is never used to train or improve any model, is never part of the anonymized research pool described in Section 3, and is never shared with any third party.
 </div>
 
 <h3>Device &amp; usage data</h3>
@@ -90,7 +91,7 @@
 </ul>
 
 <h2>3. Anonymized research data pool</h2>
-<p>Separately from the account-linked data above, ERAS maintains an anonymized biometric research pool used to improve our on-device and cloud models. Before storage, your user ID and device ID are passed through a one-way cryptographic transform (PBKDF2, with a secret salt) so this pool cannot be linked back to your account. Only your birth year is retained for this purpose — never your full date of birth.</p>
+<p>Separately from the account-linked data above, ERAS maintains an anonymized biometric research pool used to improve our on-device and cloud models. Before storage, your user ID and device ID are passed through a one-way cryptographic transform (PBKDF2, with a secret salt) so this pool cannot be linked back to your account. Only your birth year is retained for this purpose — never your full date of birth. Data obtained from a connected WHOOP account is never included in this pool.</p>
 <p>This anonymized collection happens as part of normal use of the App and is separate from the setting below, which governs a different, later question.</p>
 
 <h2>4. Sharing with third-party researchers — your choice</h2>
