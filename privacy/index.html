@@ -48,7 +48,7 @@
 <div class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="updated">ERAS Technologies Ltd · Last updated 25 September 2026</p>
+<p class="updated">ERAS Technologies Ltd · Last updated 7 October 2026</p>
 
 <p>ERAS ("we", "us", "our") provides a mobile application for meditation, stress-response monitoring, and longevity-focused wellness (the "App"), including EEG measurement via the UMind Mirror device and heart-rate/recovery data via optional third-party integrations. This policy explains what we collect, why, and the choices you have.</p>
 
@@ -75,12 +75,18 @@
   <tr><td>EEG session data</td><td>UMind Mirror device (Bluetooth)</td><td>Real-time stress/hijack detection and guided-session feedback</td></tr>
   <tr><td>Recovery score, HRV, resting heart rate, sleep performance and consistency, respiratory rate, day strain, average and maximum heart rate</td><td>WHOOP, if you connect it</td><td>Computing your ERAS Score and showing your WHOOP data inside the App</td></tr>
   <tr><td>Sleep score and stages, resting and maximum heart rate, HRV, PAI, VO2 max, fitness age, steps</td><td>Amazfit/Zepp, if you connect it</td><td>Computing your ERAS Score and showing your Amazfit/Zepp data inside the App</td></tr>
+  <tr><td>Sleep duration and stages, resting heart rate, ANS-based recovery status, cardio load, VO2 max</td><td>Polar, if you connect it</td><td>Computing your ERAS Score and showing your Polar data inside the App</td></tr>
+  <tr><td>Daily step count, resting heart rate, VO2 max estimate, sleep-consistency score</td><td>Apple Health, if you grant access</td><td>Computing your ERAS Score and showing your Apple Health data inside the App</td></tr>
   <tr><td>Session interaction data (which guided sessions you use, how you respond)</td><td>In-app</td><td>Personalizing which content is suggested to you</td></tr>
   <tr><td>Voice journaling entries</td><td>Optional, in-app</td><td>Personal reflection — recorded and transcribed entirely on your device; audio and transcript never leave your phone unless you explicitly export or share them yourself</td></tr>
 </table>
 
 <div class="note">
-<strong>Third-party integrations (WHOOP, Amazfit/Zepp):</strong> if you connect one of these accounts, we pull the specific data types listed above via that provider's official API, using a token you can revoke at any time by disconnecting the integration in the App. We do not access anything beyond what's listed here. Data from a connected WHOOP account is used only to compute your ERAS Score and to show it back to you in the App. It is never used to train or improve any model, is never part of the anonymized research pool described in Section 3, and is never shared with any third party.
+<strong>Third-party integrations (WHOOP, Amazfit/Zepp, Polar):</strong> if you connect one of these accounts, we pull the specific data types listed above via that provider's official API, using a token you can revoke at any time by disconnecting the integration in the App. We do not access anything beyond what's listed here. Data from a connected WHOOP account is used only to compute your ERAS Score and to show it back to you in the App. It is never used to train or improve any model, is never part of the anonymized research pool described in Section 3, and is never shared with any third party.
+</div>
+
+<div class="note">
+<strong>Apple Health:</strong> unlike the integrations above, Apple Health data comes directly from your device's HealthKit store via an on-device permission you grant to the App, not from a third-party server. You can revoke this access at any time in your device's Settings. We only read the specific data types listed above.
 </div>
 
 <h3>Device &amp; usage data</h3>
@@ -121,6 +127,7 @@
 
 <h2>8. Security</h2>
 <p>We use industry-standard measures including encrypted connections (TLS) for all data in transit, encryption at rest for stored data, and one-way anonymization for the research data pool described in Section 3. No system is completely secure, and we encourage you to use a strong, unique credential for your account.</p>
+<p>If we become aware of a security incident affecting your personal data, we will notify you and the relevant authorities as required by applicable law. Where an incident involves data connected to a WHOOP account, we will also notify WHOOP within 48 hours of discovery, as required by WHOOP's API Terms of Use.</p>
 
 <h2>9. Changes to this policy</h2>
 <p>We will update the "last updated" date above whenever this policy changes, and notify you in-app for material changes affecting how your health data is used.</p>
